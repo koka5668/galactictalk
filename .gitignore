@@ -33,7 +33,7 @@ node_modules/
 !/log/.keep
 /tmp
 
-# Other unneeded files
+# Other unneeded filescd
 *.swp
 *~
 .project
