@@ -1,5 +1,5 @@
 {
-  "name": "galactictalk",
+  "name": "ggalactictalk-theme",
   "version": "0.0.1",
   "scripts": {
     "dev": "pnpm -r --workspace-concurrency Infinity dev",
