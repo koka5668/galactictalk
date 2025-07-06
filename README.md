@@ -55,4 +55,3 @@ pnpm dev
 ```
 pnpm build
 ```
- pnpm theme add -D @tailwindcss/container-queries fluid-tailwind

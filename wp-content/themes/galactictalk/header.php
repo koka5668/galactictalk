@@ -19,7 +19,7 @@
 
 <header class="header">
 	<h1>
-		<a class="font-bold text-blue-500 hover:underline" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+		<a class="grid font-bold text-blue-500 hover:underline" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 			<?php bloginfo( 'name' ); ?>
 		</a>
 	</h1>
