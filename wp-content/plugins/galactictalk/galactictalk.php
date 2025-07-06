@@ -11,6 +11,7 @@
  * @package     GalacticTalk
  */
 
+   require_once __DIR__ . '/includes/acf.php';
   require_once __DIR__ . '/includes/admin.php';
   require_once __DIR__ . '/includes/archive-title.php';
   require_once __DIR__ . '/includes/block-pattern.php';
