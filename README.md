@@ -46,7 +46,7 @@ If notified of recommended extensions, follow the instructions to install them.
 
 ## Development
 
-```
+```bash
 pnpm dev
 ```
 
@@ -55,3 +55,4 @@ pnpm dev
 ```
 pnpm build
 ```
+ pnpm theme add -D @tailwindcss/container-queries fluid-tailwind

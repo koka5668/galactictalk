@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "pnpm -r --workspace-concurrency Infinity dev",
     "build": "pnpm -r --workspace-concurrency Infinity build",
-    "theme": "pnpm -F galactictalk-theme",
+    "theme": "pnpm --filter galactictalk-workspace",
     "plugin": "pnpm -F galactictalk-plugin",
     "version": "replace-in-files --regex='(Version:\\s*?)\\d+\\.\\d+\\.\\d+(\\-rc\\.\\d+)?' --replacement='$1'$npm_package_version 'wp-content/themes/galactictalk/style.css'",
     "prod:local:db": "source .env.local && wp @prod db export - | wp db import - && wp search-replace $PROD_DOMAIN $LOCAL_DOMAIN --all-tables --report-changed-only && wp plugin activate show-current-template --network",

@@ -23,6 +23,9 @@ importers:
       '@ixkaito/imagemin':
         specifier: ^0.1.0
         version: 0.1.0
+      '@tailwindcss/container-queries':
+        specifier: ^0.1.1
+        version: 0.1.1(tailwindcss@3.4.17)
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.60.0
         version: 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)
@@ -50,6 +53,9 @@ importers:
       eslint-plugin-tailwindcss:
         specifier: ^3.12.1
         version: 3.18.0(tailwindcss@3.4.17)
+      fluid-tailwind:
+        specifier: ^1.0.4
+        version: 1.0.4(tailwindcss@3.4.17)
       globby:
         specifier: ^13.2.0
         version: 13.2.2
@@ -895,6 +901,11 @@ packages:
 
   '@socket.io/component-emitter@3.1.2':
     resolution: {integrity: sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==}
+
+  '@tailwindcss/container-queries@0.1.1':
+    resolution: {integrity: sha512-p18dswChx6WnTSaJCSGx6lTmrGzNNvm2FtXmiO6AuA1V4U5REyoqwmT6kgAsIMdjo07QdAfYXHJ4hnMtfHzWgA==}
+    peerDependencies:
+      tailwindcss: '>=3.2.0'
 
   '@trysound/sax@0.2.0':
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
@@ -1988,6 +1999,10 @@ packages:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
     engines: {node: '>=8'}
 
+  filter-obj@5.1.0:
+    resolution: {integrity: sha512-qWeTREPoT7I0bifpPUXtxkZJ1XJzxWtfoWWkdVGqa+eCr3SHW/Ocp89o8vLvbUuQnadybJpjOKu4V+RwO6sGng==}
+    engines: {node: '>=14.16'}
+
   finalhandler@1.1.0:
     resolution: {integrity: sha512-ejnvM9ZXYzp6PUPUyQBMBf0Co5VX2gr5H2VQe2Ui2jWXNlxv+PYZo8wpAymJNJdLsG1R4p+M4aynF8KuoUEwRw==}
     engines: {node: '>= 0.8'}
@@ -2014,6 +2029,11 @@ packages:
 
   flatted@3.3.3:
     resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
+
+  fluid-tailwind@1.0.4:
+    resolution: {integrity: sha512-jO1+4l4r3kE/5We3kYRl3o4JsbFA2zoluEwJG3VrytlKuCfK4aTv5QHqXgOaw0YQd9HKjOVIFYsVvhG8sxIh5w==}
+    peerDependencies:
+      tailwindcss: ^3.2.0
 
   follow-redirects@1.15.9:
     resolution: {integrity: sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==}
@@ -2738,6 +2758,10 @@ packages:
   map-obj@4.3.0:
     resolution: {integrity: sha512-hdN1wVrZbb29eBGiGjJbeP8JbKjq1urkHJ/LIP/NY48MZ1QVXUsQBV1G1zvYFHn1XE06cwjBsOI2K3Ulnj1YXQ==}
     engines: {node: '>=8'}
+
+  map-obj@5.0.2:
+    resolution: {integrity: sha512-K6K2NgKnTXimT3779/4KxSvobxOtMmx1LBZ3NwRxT/MDIR3Br/fQ4Q+WCX5QxjyUR8zg5+RV9Tbf2c5pAWTD2A==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
@@ -5248,6 +5272,10 @@ snapshots:
 
   '@socket.io/component-emitter@3.1.2': {}
 
+  '@tailwindcss/container-queries@0.1.1(tailwindcss@3.4.17)':
+    dependencies:
+      tailwindcss: 3.4.17
+
   '@trysound/sax@0.2.0': {}
 
   '@types/cors@2.8.19':
@@ -6652,6 +6680,8 @@ snapshots:
     dependencies:
       to-regex-range: 5.0.1
 
+  filter-obj@5.1.0: {}
+
   finalhandler@1.1.0:
     dependencies:
       debug: 2.6.9
@@ -6690,6 +6720,13 @@ snapshots:
       rimraf: 3.0.2
 
   flatted@3.3.3: {}
+
+  fluid-tailwind@1.0.4(tailwindcss@3.4.17):
+    dependencies:
+      filter-obj: 5.1.0
+      map-obj: 5.0.2
+      picocolors: 1.1.1
+      tailwindcss: 3.4.17
 
   follow-redirects@1.15.9: {}
 
@@ -7426,6 +7463,8 @@ snapshots:
   map-obj@1.0.1: {}
 
   map-obj@4.3.0: {}
+
+  map-obj@5.0.2: {}
 
   math-intrinsics@1.1.0: {}
 
