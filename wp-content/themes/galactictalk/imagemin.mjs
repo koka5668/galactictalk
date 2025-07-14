@@ -17,7 +17,12 @@ if (!input) throw new Error();
       imageminJpegtran(),
       imageminOptipng(),
       imageminSvgo({
-        plugins: [{ removeViewBox: false }],
+        plugins: [
+          {
+            name:'removeViewBox',
+            active: false,
+           }
+          ],
       }),
     ],
   });
