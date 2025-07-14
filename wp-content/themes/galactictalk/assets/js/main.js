@@ -1,1 +1,1 @@
-
+const s=document.querySelector(".js-menu-trigger"),e=document.querySelector(".js-hamburger-container"),t=document.querySelector(".js-backdrop");s==null||s.addEventListener("click",()=>{const d=(e==null?void 0:e.getAttribute("aria-hidden"))==="true";e==null||e.setAttribute("aria-hidden",(!d).toString()),t==null||t.classList.toggle("hidden")});t==null||t.addEventListener("click",()=>{e==null||e.setAttribute("aria-hidden","true"),t==null||t.classList.add("hidden")});
