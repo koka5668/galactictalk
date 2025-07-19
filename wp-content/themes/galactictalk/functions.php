@@ -64,7 +64,7 @@ add_action(
 /**
  * Enqueue scripts and styles.
  */
-$google_fonts_url = 'https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Barlow:wght@400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap';
+$google_fonts_url = 'https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap';
 
 /**
  * Add editor styles.
